@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="Imagenes/tomorrowland_logo_icon_249379.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Registrarse</title>
+    <style>
+        .bg{
+            background-image: url("Imagenes/guia-de-arquitectura-en-santiago-de-chile-41-edificios-complejos-y-parques-de-la-capital-chilena_43.jpg");
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+<!--Barra de navegacion-->
+<nav class="navbar navbar-expand-md me-lg-5 ">
+    <div class="container-fluid">
+        <!--  Logo de la barra-->
+        <a class="navbar-brand ms-5" href="index.html">
+            <img src="Imagenes/LogoPagina2.png" width="70 px">
+        </a>
+        <!--Boton del menu-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Elementos del menu-->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-dark">Iniciar Sesion</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <button type="button" class="btn btn-light">Registrarse</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--El formulario para registrar usuario-->
+<div class="container mt-5 bg-black rounded shadow">
+    <div class="row align-item-stretch">
+        <div class="col bg d-none d-lg-block ">
+
+        </div>
+        <!--Seccion de ingreso de datos-->
+        <div class="col p5 rounded-end">
+            <div class="text-end mt-3">
+                <img src="Imagenes/LogoPagina2.png" width="48" alt="logoRegistro">
+            </div>
+            <h2 class="fw-bold text-center py-4">Formulario de registro</h2>
+            <form action="#">
+                <div class="mb-3">
+                    <label class="form-label" for="campoNombre">Nombre</label>
+                    <input class="form-control" type="text" id="campoNombre">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="campoApellidos">Apellidos</label>
+                    <input class="form-control" type="text" id="campoApellidos">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="campoEmail">Email</label>
+                    <input class="form-control" type="email" id="campoEmail">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="campoPassword">Contraseña</label>
+                    <input class="form-control" type="password" id="campoPassword">
+                </div>
+                <div class="mb-3 form-check">
+                    <input class="form-check-input" type="checkbox" id="condiciones">
+                    <label class="form-check-label" for="condiciones">Estoy de acuerdo con los Terminos y Condiciones</label>
+                </div>
+                <div class="d-grid mb-4">
+                    <button type="submit" class="btn btn-info">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
