@@ -5,12 +5,6 @@
     <link rel="icon" type="image/png" href="Imagenes/tomorrowland_logo_icon_249379.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Registrarse</title>
-    <style>
-        .bg{
-            background-image: url("Imagenes/guia-de-arquitectura-en-santiago-de-chile-41-edificios-complejos-y-parques-de-la-capital-chilena_43.jpg");
-            background-position: center center;
-        }
-    </style>
 </head>
 <body class="bg-black">
     <header>
@@ -18,52 +12,54 @@
             <div class="container-fluid justify-content-center">
                 <!--  Logo de la barra-->
                 <a class="navbar-brand" href="index.html">
-                    <img src="Imagenes/LogoPagina2.png" width="70 px">
+                    <img src="Imagenes/LogoPagina2.png" width="70 px" alt="NavLogo">
                 </a>
             </div>
         </nav>
     </header>
 
 <!--El formulario para registrar usuario-->
-<div class="container mt-5 bg-black rounded shadow">
-    <div class="row align-item-stretch">
-        <div class="col bg d-none d-lg-block ">
+    <section>
+        <div class="container mt-5 ">
+            <div class="row">
+                <div class="col-12 col-sm-8 col-md-6 m-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="m-3 text-center fs-3 fw-bold">Ingresar</div>
+                            <form action="">
+                                <div class="input-group">
+                                    <input class="form-control" type="email" placeholder="Email" id="Email">
+                                    <label for="Email" class="form-label"></label>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <input class="form-control" type="password" placeholder="Contraseña" id="Password">
+                                    <label for="Password" class="form-label"></label>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <input class="form-control" type="text" placeholder="Nombres" id="Nombres">
+                                    <label for="Nombres" class="form-label"></label>
+                                </div>
+                                <div class="input-group mt-3">
+                                    <input class="form-control" type="text" placeholder="Apellidos" id="Apellidos">
+                                    <label for="Apellidos" class="form-label"></label>
+                                </div>
 
-        </div>
-        <!--Seccion de ingreso de datos-->
-        <div class="col p5 rounded-end">
-            <div class="text-end mt-3">
-                <img src="Imagenes/LogoPagina2.png" width="48" alt="logoRegistro">
+                                <div class="m-3 form-check">
+                                    <input class="form-check-input" type="checkbox" id="RememberMe">
+                                    <label class="form-check-label" for="RememberMe">Acepto los Terminos y Condiciones</label>
+                                    <!--No cacho como hacer para que "Termnos y condicioes" este como link sin que se vaya hacia abajo-->
+                                </div>
+                                <div class="d-grid m-4">
+                                    <button type="submit" class="btn btn-info">Registrarme</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h2 class="fw-bold text-center py-4">Formulario de registro</h2>
-            <form action="#">
-                <div class="mb-3">
-                    <label class="form-label" for="campoNombre">Nombre</label>
-                    <input class="form-control" type="text" id="campoNombre">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="campoApellidos">Apellidos</label>
-                    <input class="form-control" type="text" id="campoApellidos">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="campoEmail">Email</label>
-                    <input class="form-control" type="email" id="campoEmail">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="campoPassword">Contraseña</label>
-                    <input class="form-control" type="password" id="campoPassword">
-                </div>
-                <div class="mb-3 form-check">
-                    <input class="form-check-input" type="checkbox" id="condiciones">
-                    <label class="form-check-label" for="condiciones">Estoy de acuerdo con los Terminos y Condiciones</label>
-                </div>
-                <div class="d-grid mb-4">
-                    <button type="submit" class="btn btn-info">Registrarse</button>
-                </div>
-            </form>
         </div>
-    </div>
-</div>
+    </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
