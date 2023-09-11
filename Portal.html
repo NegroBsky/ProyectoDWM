@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="Imagenes/tomorrowland_logo_icon_249379.png">
@@ -8,7 +8,57 @@
 </head>
 <body class="bg-black">
   <header>
-
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="index.html">
+          <img src="Imagenes/LogoPagina2.png" width="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Votaciones.html">Votaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Crear Votacion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
+  <div class="container mt-4 ">
+    <div class="text-center mb-4 fs-3 fw-bold">
+      Información del Usuario
+    </div>
+    <div class="card ">
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Rut</th>
+          </tr>
+          </thead>
+          <tbody class="table-group-divider ">
+          <tr>
+            <th scope="row">Alex</th>
+            <th scope="row">Turner</th>
+            <th scope="row">596321-2</th>
+          </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
