@@ -44,7 +44,7 @@
                         <th scope="col">ID</th>
                         <th scope="col">Nombre de evento</th>
                         <th scope="col">Fecha de creación</th>
-                        <th scope="col"></th>
+                        <th scope="col">Estado</th>
                     </tr>
                 </thead>
                 <tbody class="table-group-divider">
@@ -53,9 +53,31 @@
                         <th>Eliminacion "Gran Primo"</th>
                         <th>05/06/2023</th>
                         <th>
-                            <a href="">
-                                <button type="button" class="btn btn-info">Votar</button>
-                            </a>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Votar
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminación Gran Primo</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Candidatos</option>
+                                                <option value="1">Fulanito</option>
+                                                <option value="2">Carlos Peña</option>
+                                                <option value="3">La abuelita</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-outline-info">Votar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </th>
                     </tr>
                     <tr class="text-center">
@@ -64,7 +86,7 @@
                         <th>30/12/2020</th>
                         <th>
                             <a href="">
-                                <button type="button" class="btn btn-info">Votar</button>
+                                <button type="button" class="btn btn-outline-danger">Resultados</button>
                             </a>
                         </th>
                     </tr>
@@ -74,7 +96,7 @@
                         <th>01/05/2023</th>
                         <th>
                             <a href="">
-                                <button type="button" class="btn btn-info">Votar</button>
+                                <button type="button" class="btn btn-outline-danger">Resultados</button>
                             </a>
                         </th>
 
@@ -84,9 +106,31 @@
                         <th>Nominacion a la mejor mascota de la UDP</th>
                         <th>24/02/2023</th>
                         <th>
-                            <a href="/">
-                                <button type="button" class="btn btn-info">Votar</button>
-                            </a>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Mascota">
+                                Votar
+                            </button>
+                            <div class="modal fade" id="Mascota" tabindex="-1" aria-labelledby="Mascotalabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="Mascotalabel">Nominacion a la mejor mascota de la UDP</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Candidatos</option>
+                                                <option value="1">La Canela</option>
+                                                <option value="2">La Canela</option>
+                                                <option value="3">La Canela</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-outline-info">Votar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </th>
                     </tr>
                 </tbody>
