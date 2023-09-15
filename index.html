@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>VotaUDP!</title>
-    <link rel="icon" type="image/png" href="Imagenes/tomorrowland_logo_icon_249379.png">
+    <link rel="icon" type="image/png" href="Imagenes/Tomorrowland.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body class="bg-black">
@@ -20,7 +20,7 @@
             </button>
             <!--Elementos del menu-->
             <div class="collapse navbar-collapse me-lg-5" id="menu">
-                <ul class="navbar-nav ms-auto ">
+                <ul class="navbar-nav ms-auto mt-3">
                     <li class="nav-item">
                         <a class="nav-link" href="IniciarSesion.html">
                             <button type="button" class="btn btn-outline-light">Iniciar Sesion</button>
@@ -35,9 +35,45 @@
             </div>
         </div>
     </nav>
+    <hr class="border border-info border-2 opacity-50">
 </header>
-<!--Barra de navegacion-->
-
+<div class="container col-8 p-4">
+    <p class="text-center fw-bold fs-5">Votaciones aún disponibles</p>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <img src="Imagenes/Mejores-virales-chilenos-de-la-historia.png" class="card-img-top" width="100 px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2 text-center">Mejor viral de Chile</h5>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <img src="Imagenes/Canela.png" class="card-img-top" width="100 px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2 text-center">La Canela contra el mundo</h5>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <a href="#" class="btn btn-info ">Votar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
